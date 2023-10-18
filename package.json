@@ -2,7 +2,7 @@
   "name": "develop-training-11-signup",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "/controllers/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
