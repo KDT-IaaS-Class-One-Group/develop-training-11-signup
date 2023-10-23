@@ -8,6 +8,7 @@ const handlePOSTRequest = require('./request-handle/handlePOSTRequest');
 const server = http.createServer((req, res) => {
 
   if(req.method === "GET") {
+    console.log("최초 메서드 검사 1");
     handleGETRequest(req, res);
   } else if(req.method === "POST") {
     handlePOSTRequest(req, res);
