@@ -8,6 +8,8 @@ const handlePOSTRequest = require('./request-handle/handlePOSTRequest');
 const server = http.createServer((req, res) => {
 
   if(req.method === "GET") {
+    console.log('GET 요청 tracking-1', 'req.method : ', req.method);
+    console.log(req.url);
     handleGETRequest(req, res);
   } else if(req.method === "POST") {
     handlePOSTRequest(req, res);

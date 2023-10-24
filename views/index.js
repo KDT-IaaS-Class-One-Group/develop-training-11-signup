@@ -1,4 +1,6 @@
-// * 문서에 직접적으로 연결된 index.js 파일
+
+// const fs = require('fs');
+// const component = require('./components/core/component');
 
 // * initialize
 const root = document.getElementById('root');
