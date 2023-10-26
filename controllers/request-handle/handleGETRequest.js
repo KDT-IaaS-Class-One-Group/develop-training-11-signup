@@ -4,6 +4,14 @@ const filePath = path.join(__dirname, '..', '..', 'views', 'public', 'index.html
 module.exports = (req, res) => {
   console.log('GET 요청 tracking-2', 'handleGETRequest.js');
   if (req.url === '/') {
+
+    /**
+     * ? get, "/" 요청이 발생했을 때
+     * * index.html + index.css + index.js 파일을 '문자열'을 합치는 방식으로
+     * * 처리하면,
+     */
+
+
     fs.readFile(filePath, 'utf8', (err, data) => {
       console.log('GET 요청 tracking-3', 'fs.readFile');
       if (err) { // 에러 처리
